@@ -1,0 +1,112 @@
+:root {
+  --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --softRed: hsl(14, 88%, 65%);
+  --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --lightGrayishBlue: hsl(240, 5%, 91%);
+  --darkGrayishBlue: hsl(240, 6%, 50%);
+  --softViolet: hsl(273, 75%, 66%);
+  --softBlue: hsl(240, 73%, 65%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 325px;
+  margin: 0 auto;
+}
+
+.row--mobile {
+  display: flex;
+}
+
+.page {
+  background-image: linear-gradient(var(--softViolet), var(--softBlue));
+  min-height: 100vh;
+  display: flex;
+  padding-top: 2em;
+}
+
+.header__img-woman--mobile,
+.header__img-shadow--mobile {
+  position: absolute;
+  left: 9%;
+}
+
+.header__img-shadow--mobile {
+  z-index: 2;
+  top: 8.5em;
+  left: 4em;
+}
+
+.header__img-woman--mobile {
+  top: 1em;
+}
+
+.card {
+  padding-top: 8em;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2em;
+}
+
+.card__title {
+  font-weight: 700;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.q {
+  padding-bottom: 2em;
+  margin-right: auto;
+}
+
+.q--selected {
+  font-weight: 700;
+}
+
+.arrow {
+  align-self: center;
+  padding-bottom: 2em;
+}
+
+.arrow--selected {
+  transform: rotate(180deg);
+  transform: translateY(0px);
+}
+
+.a {
+  display: none;
+  padding-bottom: 2em;
+  font-size: 14px;
+}
+
+.a--selected {
+  display: block;
+}
+
+.card__divider {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--lightGrayishBlue);
+  margin-bottom: 2em;
+}
