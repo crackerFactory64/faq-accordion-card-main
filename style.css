@@ -35,34 +35,29 @@ img {
 }
 
 .page {
+  padding-top: 2em;
   background-image: linear-gradient(var(--softViolet), var(--softBlue));
   min-height: 100vh;
-  display: flex;
-  padding-top: 2em;
 }
 
 .header {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   left: 50%;
-  top: 2.5%;
-  transform: translateX(-50%);
+  top: 1em;
+  transform: translate(-50%, -2.5%);
   min-width: 325px;
 }
 
 .header__img-shadow--mobile {
-  margin-top: -6em;
-  margin-left: 2em;
+  position: absolute;
+  top: 52%;
+  left: 13.5%;
 }
 
 .card {
-  padding-top: 8em;
-  align-self: center;
-  justify-self: center;
+  padding-top: 7em;
   width: fit-content;
-  margin: 0 auto;
+  margin: 5em auto;
   background: #fff;
   border-radius: 2em;
 }
