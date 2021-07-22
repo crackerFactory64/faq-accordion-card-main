@@ -41,20 +41,20 @@ img {
   padding-top: 2em;
 }
 
-.header__img-woman--mobile,
-.header__img-shadow--mobile {
+.header {
   position: absolute;
-  left: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 2.5%;
+  transform: translateX(-50%);
+  min-width: 325px;
 }
 
 .header__img-shadow--mobile {
-  z-index: 2;
-  top: 8.5em;
-  left: 4em;
-}
-
-.header__img-woman--mobile {
-  top: 1em;
+  margin-top: -6em;
+  margin-left: 2em;
 }
 
 .card {
@@ -89,8 +89,7 @@ img {
 }
 
 .arrow--selected {
-  transform: rotate(180deg);
-  transform: translateY(0px);
+  transform: rotate(180deg) translateY(2em);
 }
 
 .a {
