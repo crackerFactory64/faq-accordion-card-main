@@ -72,6 +72,13 @@ img {
 .q {
   padding-bottom: 2em;
   margin-right: auto;
+  text-decoration: none;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+.q:hover,
+.q:focus {
+  color: var(--softRed);
 }
 
 .q--selected {
