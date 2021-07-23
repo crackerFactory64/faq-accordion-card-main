@@ -57,6 +57,7 @@ img {
 .card {
   padding-top: 7em;
   width: fit-content;
+  min-width: 325px;
   margin: 5em auto;
   background: #fff;
   border-radius: 2em;
@@ -100,7 +101,7 @@ img {
   font-size: 14px;
 }
 
-.a--selected {
+.a:target {
   display: block;
 }
 
