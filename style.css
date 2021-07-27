@@ -58,6 +58,7 @@ img {
 .card {
   padding-top: 7em;
   width: fit-content;
+  width: -moz-fit-content;
   min-width: 325px;
   min-height: 570px;
   margin: 5em auto;
