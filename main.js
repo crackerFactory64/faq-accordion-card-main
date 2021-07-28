@@ -1,14 +1,21 @@
 const qs = ["1", "2", "3", "4", "5"];
 
 const selector = (q) => {
+  let current = q;
   for (let i = 0; i < qs.length; i++) {
-    document.getElementById("q" + qs[i]).classList.remove("q--selected");
-    document
-      .getElementById("arrow" + qs[i])
-      .classList.remove("arrow--selected");
+    if (i + 1 != current) {
+      document.getElementById("q" + qs[i]).classList.remove("q--selected");
+      document
+        .getElementById("arrow" + qs[i])
+        .classList.remove("arrow--selected");
+      document.getElementById("a" + qs[i]).classList.remove("a--selected");
+    }
   }
-  document.getElementById("q" + q).classList.add("q--selected");
-  document.getElementById("arrow" + q).classList.add("arrow--selected");
+  document.getElementById("a" + current).classList.toggle("a--selected");
+  document.getElementById("q" + current).classList.toggle("q--selected");
+  document
+    .getElementById("arrow" + current)
+    .classList.toggle("arrow--selected");
 };
 
 document.getElementById("q1").onclick = () => selector("1");

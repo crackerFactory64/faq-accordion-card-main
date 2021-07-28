@@ -108,7 +108,7 @@ img {
   font-size: 14px;
 }
 
-.a:target {
+.a--selected {
   display: block;
 }
 
